@@ -5,11 +5,12 @@ export const theme = {
     mainBlueLight: "#2188FF",
     textMain: "#252525",
     textSecondary: "#6E7E91",
+    textWhite: "#FFFFFF",
+    backgroundSecondary: "#FFFFFF"
   },
   darkTheme: {
     backgroundMain: "#252525",
     backgroundSecondary: "#363636",
-    text: "#FFFFFF",
   },
   breakpoints: {
     small: "480px",

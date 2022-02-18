@@ -6,6 +6,7 @@ import {
   DescriptionBox,
   ContactButton,
   ButtonText,
+  MainParagraph
 } from "./styled";
 
 export const Header = () => {
@@ -15,10 +16,10 @@ export const Header = () => {
       <DescriptionBox>
         <span>THIS IS</span>
         <h1>Gosia Ras</h1>
-        <p>
+        <MainParagraph>
           👨🏻‍💻 I'm a Front-End Developer looking for new opportunities to develop!
           Currently fascinated with React and styled-components
-        </p>
+        </MainParagraph>
         <ContactButton>
           <img src={message} alt="email icon" />
           <ButtonText

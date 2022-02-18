@@ -16,8 +16,14 @@ export const Hero = styled.img`
 export const DescriptionBox = styled.div`
   max-width: 500px;
   margin-left: 30px;
-  padding: 40px;
+  padding: 30px;
 `;
+
+export const MainParagraph = styled.p`
+font-size: 20px;
+line-height: 28px;
+font-weight: 400;
+color: ${({ theme }) => theme.colors.textSecondary};`
 
 export const ContactButton = styled.button`
 display: flex;
@@ -30,7 +36,6 @@ gap: 18px;
 `;
 
 export const ButtonText = styled.a`
-  font-family: Inter;
   font-style: normal;
   font-weight: 600;
   font-size: 20.0584px;

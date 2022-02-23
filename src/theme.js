@@ -6,7 +6,8 @@ export const theme = {
     textMain: "#252525",
     textSecondary: "#6E7E91",
     textWhite: "#FFFFFF",
-    backgroundSecondary: "#FFFFFF"
+    backgroundSecondary: "#FFFFFF",
+    greyDetails: "#D1D5DA",
   },
   darkTheme: {
     backgroundMain: "#252525",

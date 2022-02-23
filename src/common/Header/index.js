@@ -17,8 +17,8 @@ export const Header = () => {
         <span>THIS IS</span>
         <h1>Gosia Ras</h1>
         <MainParagraph>
-          👨🏻‍💻 I'm a Front-End Developer looking for new opportunities to develop!
-          Currently fascinated with React and styled-components
+          👩‍💻 I'm a Front-End Developer looking for new opportunities to
+          develop! Currently fascinated with React and styled-components
         </MainParagraph>
         <ContactButton>
           <img src={message} alt="email icon" />

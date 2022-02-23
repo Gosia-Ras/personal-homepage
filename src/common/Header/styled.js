@@ -20,19 +20,21 @@ export const DescriptionBox = styled.div`
 `;
 
 export const MainParagraph = styled.p`
-font-size: 20px;
-line-height: 28px;
-font-weight: 400;
-color: ${({ theme }) => theme.colors.textSecondary};`
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.colors.textSecondary};
+`;
 
 export const ContactButton = styled.button`
-display: flex;
-gap: 18px;
+  display: flex;
+  gap: 18px;
   background-color: ${({ theme }) => theme.colors.mainBlue};
   text-decoration: none;
   border: 1px solid ${({ theme }) => theme.colors.mainBlueLight};
   padding: 12px 16px;
   border-radius: 4px;
+  cursor: pointer;
 `;
 
 export const ButtonText = styled.a`

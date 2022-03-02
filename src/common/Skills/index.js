@@ -2,8 +2,9 @@ import {
   SkillsContainer,
   SkillsBox,
   SkillsHeader,
+  ToolsIcon,
+  RocketIcon,
 } from "./styled";
-import { VscTools, VscRocket } from "react-icons/vsc";
 import { SkillsListed, SkillsToDo } from "../../getSkillsList";
 
 export const Skills = () => {
@@ -11,7 +12,7 @@ export const Skills = () => {
     <>
       <SkillsBox>
         <SkillsHeader>
-          My skillset includes <VscTools />
+          My skillset includes <ToolsIcon />
         </SkillsHeader>
         <SkillsContainer>
           <SkillsListed />
@@ -19,7 +20,7 @@ export const Skills = () => {
       </SkillsBox>
       <SkillsBox>
         <SkillsHeader>
-          What I want to learn next <VscRocket />
+          What I want to learn next <RocketIcon />
         </SkillsHeader>
         <SkillsContainer>
           <SkillsToDo />

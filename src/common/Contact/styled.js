@@ -1,0 +1,59 @@
+import styled from "styled-components";
+import { Github } from "@styled-icons/bootstrap/Github";
+import { Facebook } from "@styled-icons/bootstrap/Facebook";
+import { LinkedinWithCircle } from "@styled-icons/entypo-social/LinkedinWithCircle";
+import { InstagramWithCircle } from "@styled-icons/entypo-social/InstagramWithCircle";
+
+export const ContactSection = styled.section`
+  max-width: 600px;
+  padding-bottom: 110px;
+margin-top: 100px;
+`;
+
+export const ContactHeader = styled.h3`
+  color: ${({ theme }) => theme.colors.textSecondary};
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+`;
+export const ContactEmail = styled.a`
+  color: ${({ theme }) => theme.colors.textMain};
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: 5%;
+  text-decoration: none;
+`;
+
+export const ContactParagraph = styled.p`
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 5%;
+  line-height: 25px;
+`;
+
+export const IconsBox = styled.div`
+  display: flex;
+  gap: 15px;
+  align-items: center;
+`;
+
+export const GitHubIcon = styled(Github)`
+  color: ${({ theme }) => theme.colors.textMain};
+  width: 40px;
+`;
+
+export const FacebookIcon = styled(Facebook)`
+  color: ${({ theme }) => theme.colors.textMain};
+  width: 40px;
+`;
+
+export const LinkedinIcon = styled(LinkedinWithCircle)`
+  color: ${({ theme }) => theme.colors.textMain};
+  width: 45px;
+`;
+
+export const InstagramIcon = styled(InstagramWithCircle)`
+  color: ${({ theme }) => theme.colors.textMain};
+  width: 42px;
+`;

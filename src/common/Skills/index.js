@@ -1,8 +1,6 @@
 import {
-  SkillsList,
   SkillsContainer,
   SkillsBox,
-  ListItem,
   SkillsHeader,
 } from "./styled";
 import { VscTools, VscRocket } from "react-icons/vsc";

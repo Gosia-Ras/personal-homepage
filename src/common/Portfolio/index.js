@@ -1,6 +1,7 @@
 import {
   LinkList,
   ListItem,
+  PortfolioContainer,
   PortfolioHeader,
   PortfolioHeaderBox,
   PortfolioIcon,
@@ -32,7 +33,7 @@ export const Portfolio = () => {
   }
 
   return (
-    <div>
+    <PortfolioContainer>
       <PortfolioHeaderBox>
         <PortfolioIcon />
         <PortfolioHeader>Portfolio</PortfolioHeader>
@@ -60,6 +61,6 @@ export const Portfolio = () => {
           </ProjectCard>
         ))}
       </ProjectsBox>
-    </div>
+    </PortfolioContainer>
   );
 };

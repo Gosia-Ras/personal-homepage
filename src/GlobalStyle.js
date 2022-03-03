@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
    background-color: ${({ theme }) => theme.colors.background};
 
     @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
-   margin: 0;
+   margin: 0 auto;
   }
   }
 `;

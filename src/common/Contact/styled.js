@@ -11,6 +11,7 @@ export const ContactSection = styled.section`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     margin-top: 50px;
+    margin: 0 auto;
   }
 `;
 

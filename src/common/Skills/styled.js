@@ -47,7 +47,7 @@ export const SkillsList = styled.ul`
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-flow: row;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-flow: row;

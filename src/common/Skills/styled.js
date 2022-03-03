@@ -12,6 +12,11 @@ export const SkillsBox = styled.div`
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
   max-height: 400px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    margin-top: 40px;
+    max-height: fit-content;
+  }
 `;
 
 export const SkillsContainer = styled.div`
@@ -30,6 +35,10 @@ export const SkillsHeader = styled.h1`
   gap: 8px;
   padding-bottom: 15px;
   border-bottom: 1px solid ${({ theme }) => theme.colors.greyDetails};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    font-size: 18px;
+  }
 `;
 
 export const SkillsList = styled.ul`
@@ -37,6 +46,13 @@ export const SkillsList = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-flow: row;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    min-height: fit-content;
+  }
 `;
 
 export const ListItem = styled.li`
@@ -52,16 +68,26 @@ export const ListItem = styled.li`
     width: 1em;
     margin-left: -1em;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    font-size: 15px;
+  }
 `;
 
 export const ToolsIcon = styled(Tools)`
   color: ${({ theme }) => theme.colors.mainBlue};
   width: 30px;
   margin-left: 5px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    width: 25px;
+  }
 `;
 
 export const RocketIcon = styled(Rocket)`
   color: ${({ theme }) => theme.colors.mainBlue};
   width: 35px;
   margin-left: 5px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    width: 25px;
+  }
 `;

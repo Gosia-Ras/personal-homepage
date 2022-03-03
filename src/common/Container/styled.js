@@ -5,7 +5,7 @@ export const Wrapper = styled.div`
   padding: 0px 250px;
   margin: 0 auto;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    padding: 0px 16px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    padding: 15px;
   }
 `;

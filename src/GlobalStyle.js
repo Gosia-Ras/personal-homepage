@@ -13,6 +13,10 @@ export const GlobalStyle = createGlobalStyle`
    font-family: 'Inter', sans-serif;
    max-width: 1920px;
    height: 100vh;
-   background-color: ${({ theme }) => theme.colors.background};;
+   background-color: ${({ theme }) => theme.colors.background};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+   margin: 0;
+  }
   }
 `;

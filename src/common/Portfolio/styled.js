@@ -21,6 +21,10 @@ export const PortfolioHeader = styled.h2`
   letter-spacing: 5%;
   text-align: center;
   margin: 5px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    font-size: 25px;
+  }
 `;
 export const PortfolioParagraph = styled.p`
   font-weight: 400;
@@ -28,6 +32,10 @@ export const PortfolioParagraph = styled.p`
   line-height: 28px;
   letter-spacing: 5%;
   margin: 5px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    font-size: 18px;
+  }
 `;
 
 export const ProjectsBox = styled.div`
@@ -35,6 +43,11 @@ export const ProjectsBox = styled.div`
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 `;
 
 export const ProjectCard = styled.div`
@@ -46,24 +59,37 @@ export const ProjectCard = styled.div`
   border-radius: 4px;
   max-width: 450px;
   word-break: keep-all;
+
+  &:hover {
+    border: 6px solid rgba(3, 102, 214, 0.2);
+  } //find other solution for color
 `;
 
 export const ProjectName = styled.h3`
-font-weight: 700;
-font-size: 24px;
-letter-spacing: 5%;
-color: ${({ theme }) => theme.colors.mainBlue};
-`
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 5%;
+  color: ${({ theme }) => theme.colors.mainBlue};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    font-size: 20px;
+  }
+`;
 export const ProjectDescription = styled.p`
-font-weight: 400;
-font-size: 18px;
-letter-spacing: 5%;
-color: ${({ theme }) => theme.colors.textSecondary};
-`
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: 5%;
+  color: ${({ theme }) => theme.colors.textSecondary};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    font-size: 16px;
+  }
+`;
 
 export const LinkList = styled.ul`
-list-style: none;
-padding-left: 0;`
+  list-style: none;
+  padding-left: 0;
+`;
 
 export const ListItem = styled.li`
   font-weight: 400;
@@ -72,12 +98,15 @@ export const ListItem = styled.li`
   color: ${({ theme }) => theme.colors.textSecondary};
   display: flex;
   gap: 15px;
-  align-items: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    font-size: 15px;
+  }
 `;
 
 export const ProjectLink = styled.a`
-text-decoration: none;
-border-bottom: 0.5px solid ${({ theme }) => theme.mainBlueLight};
-color: ${({ theme }) => theme.colors.mainBlue};
-text-align: center;
-`
+  text-decoration: none;
+  border-bottom: 0.5px solid ${({ theme }) => theme.mainBlueLight};
+  color: ${({ theme }) => theme.colors.mainBlue};
+  text-align: center;
+`;

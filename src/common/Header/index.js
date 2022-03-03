@@ -6,7 +6,9 @@ import {
   DescriptionBox,
   ContactButton,
   ButtonText,
-  MainParagraph
+  MainParagraph,
+  HeroHeader,
+  HeroIntro
 } from "./styled";
 
 export const Header = () => {
@@ -14,8 +16,8 @@ export const Header = () => {
     <HeroContainer>
       <Hero src={photo} alt="Gosia Ras" />
       <DescriptionBox>
-        <span>THIS IS</span>
-        <h1>Gosia Ras</h1>
+        <HeroIntro>This is</HeroIntro>
+        <HeroHeader>Gosia Ras</HeroHeader>
         <MainParagraph>
           👩‍💻 I'm a Front-End Developer looking for new opportunities to
           develop! Currently fascinated with React and styled-components

@@ -6,17 +6,51 @@ export const HeroContainer = styled.div`
   max-width: 1300px;
   margin: 0 auto;
   margin-top: 100px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 `;
 
 export const Hero = styled.img`
   height: 350px;
   border-radius: 200px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    width: 135px;
+    height: 135px;
+    padding: 5px
+  }
+`;
+
+export const HeroIntro = styled.span`
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.colors.textSecondary};
+`;
+
+export const HeroHeader = styled.h1`
+  font-size: 38px;
+  letter-spacing: 5%;
+  font-weight: 900;
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    font-size: 22px;
+  }
 `;
 
 export const DescriptionBox = styled.div`
   max-width: 500px;
   margin-left: 30px;
   padding: 30px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    margin: 0 auto;
+    padding: 0;
+    max-width: max-content;
+  }
 `;
 
 export const MainParagraph = styled.p`
@@ -24,6 +58,10 @@ export const MainParagraph = styled.p`
   line-height: 28px;
   font-weight: 400;
   color: ${({ theme }) => theme.colors.textSecondary};
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    font-size: 17px;
+  }
 `;
 
 export const ContactButton = styled.button`

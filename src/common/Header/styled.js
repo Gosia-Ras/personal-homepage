@@ -20,7 +20,7 @@ export const Hero = styled.img`
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     width: 135px;
     height: 135px;
-    padding: 5px
+    padding: 5px;
   }
 `;
 
@@ -73,6 +73,11 @@ export const ContactButton = styled.button`
   padding: 12px 16px;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 275ms ease;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.mainBlueLight};
+  }
 `;
 
 export const ButtonText = styled.a`

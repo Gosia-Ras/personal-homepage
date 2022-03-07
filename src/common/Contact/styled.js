@@ -28,9 +28,14 @@ export const ContactEmail = styled.a`
   line-height: 39px;
   letter-spacing: 5%;
   text-decoration: none;
+  transition: color 275ms ease;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     font-size: 18px;
+  }
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.mainBlue};
   }
 `;
 
@@ -54,32 +59,52 @@ export const IconsBox = styled.div`
 export const GitHubIcon = styled(Github)`
   color: ${({ theme }) => theme.colors.textMain};
   width: 40px;
+  transition: color 275ms ease;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     width: 30px;
+  }
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.mainBlue};
   }
 `;
 
 export const FacebookIcon = styled(Facebook)`
   color: ${({ theme }) => theme.colors.textMain};
   width: 40px;
+  transition: color 275ms ease;
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     width: 30px;
+  }
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.mainBlue};
   }
 `;
 
 export const LinkedinIcon = styled(LinkedinWithCircle)`
   color: ${({ theme }) => theme.colors.textMain};
   width: 45px;
+  transition: color 275ms ease;
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     width: 32px;
+  }
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.mainBlue};
   }
 `;
 
 export const InstagramIcon = styled(InstagramWithCircle)`
   color: ${({ theme }) => theme.colors.textMain};
   width: 42px;
+  transition: color 275ms ease;
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     width: 32px;
+  }
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.mainBlue};
   }
 `;

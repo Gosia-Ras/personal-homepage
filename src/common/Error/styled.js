@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 import { ExclamationTriangle } from "@styled-icons/bootstrap/ExclamationTriangle";
 
 export const ErrorBox = styled.div`
@@ -36,6 +36,10 @@ export const GitHubButton = styled.button`
   border-radius: 4px;
   cursor: pointer;
   margin-top: 5px;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.colors.mainBlueLight};
+  }
 `;
 
 export const GitHubButtonText = styled.a`

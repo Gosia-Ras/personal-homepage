@@ -63,6 +63,7 @@ export const ProjectCard = styled.div`
   border-radius: 4px;
   max-width: 450px;
   word-break: keep-all;
+  transition: border 275ms ease;
 
   &:hover {
     border: 6px solid rgba(3, 102, 214, 0.2);

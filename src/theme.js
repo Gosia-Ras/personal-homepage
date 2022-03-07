@@ -9,10 +9,6 @@ export const theme = {
     backgroundSecondary: "#FFFFFF",
     greyDetails: "#D1D5DA",
   },
-  darkTheme: {
-    backgroundMain: "#252525",
-    backgroundSecondary: "#363636",
-  },
   breakpoints: {
     small: "480px",
     medium: "767px",
@@ -21,4 +17,9 @@ export const theme = {
     extraLarge: "1280px",
     container: "1368px",
   },
+};
+
+export const darkTheme = {
+    backgroundMain: "#252525",
+    backgroundSecondary: "#363636",
 };

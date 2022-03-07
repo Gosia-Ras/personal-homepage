@@ -44,8 +44,7 @@ export const PortfolioParagraph = styled.p`
 
 export const ProjectsBox = styled.div`
   display: grid;
-  grid-auto-columns: 1fr 1fr;
-  grid-template-columns: 1fr;
+  grid-template-columns: 400px 1fr;
   grid-gap: 10px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
@@ -61,7 +60,7 @@ export const ProjectCard = styled.div`
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
-  max-width: 450px;
+  max-width: 400px;
   word-break: keep-all;
   transition: border 275ms ease;
 
@@ -114,4 +113,9 @@ export const ProjectLink = styled.a`
   border-bottom: 0.5px solid ${({ theme }) => theme.mainBlueLight};
   color: ${({ theme }) => theme.colors.mainBlue};
   text-align: center;
+  transition: color 375ms ease;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.mainBlueLight};
+  }
 `;

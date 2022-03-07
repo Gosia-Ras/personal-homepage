@@ -1,4 +1,4 @@
-import { SkillsList, ListItem } from "./common/Skills/styled";
+import { SkillsList, ListItem } from "../common/Skills/styled";
 import { goals, items } from "./skillsList";
 
 export const SkillsListed = () => {

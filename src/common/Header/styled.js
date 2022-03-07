@@ -7,9 +7,9 @@ export const HeroContainer = styled.div`
   margin: 0 auto;
   margin-top: 100px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     flex-direction: column;
-    margin: 0 auto;
+    margin-top: 0px;
   }
 `;
 
@@ -17,10 +17,16 @@ export const Hero = styled.img`
   height: 350px;
   border-radius: 200px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.larger}) {
+    max-height: 300px;
+    padding: 5px;
+    max-width: fit-content;
+    padding: 10px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     width: 135px;
     height: 135px;
-    padding: 5px;
   }
 `;
 

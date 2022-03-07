@@ -1,18 +1,22 @@
+import React from "react";
+import { Provider as ReduxProvider } from "react-redux";
+import store from "./store";
+import DarkThemeProvider from "./features/DarkThemeProvider";
+import { Container } from "./common/Container/styled";
 import { Header } from "./common/Header";
 import { Skills } from "./common/Skills";
-import { Container } from "./common/Container";
 import { Contact } from "./common/Contact";
 import { Portfolio } from "./common/Portfolio";
 
-function App() {
-  return (
-    <Container>
-      <Header />
-      <Skills />
-      <Portfolio />
-      <Contact />
-    </Container>
-  );
-}
-
-export default App;
+export const App = () => (
+  <ReduxProvider store={store}>
+    <DarkThemeProvider>
+      <Container>
+        <Header />
+        <Skills />
+        <Portfolio />
+        <Contact />
+      </Container>
+    </DarkThemeProvider>
+  </ReduxProvider>
+);

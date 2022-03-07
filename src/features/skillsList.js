@@ -12,13 +12,13 @@ export const items = [
   { id: 11, name: "CSS Grid" },
   { id: 12, name: "CSS Flexbox" },
   { id: 13, name: "React Router" },
-  { id: 14, name: "Working with API (fetch, axios)" },
+  { id: 14, name: "Scrum" },
   { id: 15, name: "Redux Toolkit" },
   { id: 16, name: "Error handling" },
   { id: 17, name: "Promises, Async/Await" },
   { id: 18, name: "GitHub Pull Requests & Review" },
   { id: 19, name: "Trello" },
-  { id: 20, name: "Scrum" },
+  { id: 20, name: "Working with API (fetch, axios)" },
   { id: 21, name: "NPM" },
 ];
 

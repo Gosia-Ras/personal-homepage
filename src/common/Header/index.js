@@ -8,8 +8,9 @@ import {
   ButtonText,
   MainParagraph,
   HeroHeader,
-  HeroIntro
+  HeroIntro,
 } from "./styled";
+import { DarkThemeToggle } from "../../features/DarkThemeToggler";
 
 export const Header = () => {
   return (
@@ -19,8 +20,8 @@ export const Header = () => {
         <HeroIntro>This is</HeroIntro>
         <HeroHeader>Gosia Ras</HeroHeader>
         <MainParagraph>
-          👩‍💻 I'm a Front-End Developer looking for new opportunities to
-          develop! Currently fascinated with React and styled-components
+          👩‍💻 I'm a Front-End Developer looking for new opportunities to develop!
+          Currently fascinated with React and styled-components
         </MainParagraph>
         <ContactButton>
           <img src={message} alt="email icon" />
@@ -33,6 +34,7 @@ export const Header = () => {
           </ButtonText>
         </ContactButton>
       </DescriptionBox>
+      <DarkThemeToggle />
     </HeroContainer>
   );
 };

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Github } from "@styled-icons/bootstrap/Github";
+import {backgroundSecondary, projectBoxBorder, projectTitle, textSecondaryColor} from "../../theme"
 
 export const PortfolioContainer = styled.div`
 margin: 0 auto;
@@ -54,9 +55,9 @@ export const ProjectsBox = styled.div`
 `;
 
 export const ProjectCard = styled.div`
-  border: 6px solid ${({ theme }) => theme.colors.greyDetails};
+  border: 6px solid ${projectBoxBorder};
   padding: 15px;
-  background-color: ${({ theme }) => theme.colors.backgroundSecondary};
+  background-color: ${backgroundSecondary};
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
@@ -73,7 +74,7 @@ export const ProjectName = styled.h3`
   font-weight: 700;
   font-size: 24px;
   letter-spacing: 5%;
-  color: ${({ theme }) => theme.colors.mainBlue};
+  color: ${projectTitle};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     font-size: 20px;
@@ -83,7 +84,7 @@ export const ProjectDescription = styled.p`
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 5%;
-  color: ${({ theme }) => theme.colors.textSecondary};
+  color: ${textSecondaryColor};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     font-size: 16px;
@@ -99,7 +100,7 @@ export const ListItem = styled.li`
   font-weight: 400;
   font-size: 18px;
   letter-spacing: 5%;
-  color: ${({ theme }) => theme.colors.textSecondary};
+  color: ${textSecondaryColor};
   display: flex;
   gap: 15px;
 

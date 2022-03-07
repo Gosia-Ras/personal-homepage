@@ -1,13 +1,15 @@
 import styled from "styled-components";
 import { Tools } from "@styled-icons/bootstrap/Tools";
 import { Rocket } from "@styled-icons/ionicons-outline/Rocket";
+import { backgroundSecondary, textSecondaryColor } from "../../theme";
 
 export const SkillsBox = styled.div`
-  background-color: ${({ theme }) => theme.colors.backgroundSecondary};
+  background-color: ${backgroundSecondary};
   border-radius: 4px;
   max-width: 1216px;
+  min-width: 850px;
   margin: 0 auto;
-  padding: 10px 0px 10px 15px;
+  padding: 15px;
   margin-top: 63px;
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
@@ -16,6 +18,8 @@ export const SkillsBox = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     margin-top: 40px;
     max-height: fit-content;
+    max-width: fit-content;
+    min-width: 100vw;
   }
 `;
 
@@ -46,6 +50,7 @@ export const SkillsList = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-flow: row;
+  gap: 10px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     display: grid;
@@ -59,8 +64,9 @@ export const ListItem = styled.li`
   font-family: "Inter", sans-serif;
   font-size: 17px;
   font-weight: 400;
-  color: ${({ theme }) => theme.colors.textSecondary};
+  color: ${textSecondaryColor};
   line-height: 25px;
+
   &:before {
     content: "• ";
     color: ${({ theme }) => theme.colors.mainBlue};

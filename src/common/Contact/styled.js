@@ -3,6 +3,7 @@ import { Github } from "@styled-icons/bootstrap/Github";
 import { Facebook } from "@styled-icons/bootstrap/Facebook";
 import { LinkedinWithCircle } from "@styled-icons/entypo-social/LinkedinWithCircle";
 import { InstagramWithCircle } from "@styled-icons/entypo-social/InstagramWithCircle";
+import { iconSocialColors, textColor } from "../../theme";
 
 export const ContactSection = styled.section`
   max-width: 600px;
@@ -22,7 +23,7 @@ export const ContactHeader = styled.h3`
   line-height: 16px;
 `;
 export const ContactEmail = styled.a`
-  color: ${({ theme }) => theme.colors.textMain};
+  color: ${textColor};
   font-weight: 900;
   font-size: 32px;
   line-height: 39px;
@@ -57,7 +58,7 @@ export const IconsBox = styled.div`
 `;
 
 export const GitHubIcon = styled(Github)`
-  color: ${({ theme }) => theme.colors.textMain};
+  color: ${iconSocialColors};
   width: 40px;
   transition: color 275ms ease;
 
@@ -71,7 +72,7 @@ export const GitHubIcon = styled(Github)`
 `;
 
 export const FacebookIcon = styled(Facebook)`
-  color: ${({ theme }) => theme.colors.textMain};
+  color: ${iconSocialColors};
   width: 40px;
   transition: color 275ms ease;
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
@@ -84,7 +85,7 @@ export const FacebookIcon = styled(Facebook)`
 `;
 
 export const LinkedinIcon = styled(LinkedinWithCircle)`
-  color: ${({ theme }) => theme.colors.textMain};
+  color: ${iconSocialColors};
   width: 45px;
   transition: color 275ms ease;
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
@@ -97,7 +98,7 @@ export const LinkedinIcon = styled(LinkedinWithCircle)`
 `;
 
 export const InstagramIcon = styled(InstagramWithCircle)`
-  color: ${({ theme }) => theme.colors.textMain};
+  color: ${iconSocialColors};
   width: 42px;
   transition: color 275ms ease;
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {

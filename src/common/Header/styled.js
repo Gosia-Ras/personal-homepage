@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { textSecondaryColor } from "../../theme";
 
 export const HeroContainer = styled.div`
   display: flex;
@@ -35,7 +36,7 @@ export const HeroIntro = styled.span`
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.colors.textSecondary};
+  color: ${textSecondaryColor};
 `;
 
 export const HeroHeader = styled.h1`
@@ -63,7 +64,7 @@ export const MainParagraph = styled.p`
   font-size: 20px;
   line-height: 28px;
   font-weight: 400;
-  color: ${({ theme }) => theme.colors.textSecondary};
+  color: ${textSecondaryColor};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     font-size: 17px;

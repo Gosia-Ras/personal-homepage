@@ -12,25 +12,12 @@ import {
   ProjectName,
   ProjectsBox,
 } from "./styled";
-import { useEffect, useState } from "react";
+import { Loader } from "../Loader";
+import useFetchData from "../../features/useFetchData";
+import { Error } from "../Error";
 
 export const Portfolio = () => {
-  const [repos, setRepos] = useState(null);
-  useEffect(() => {
-    fetch(`https://api.github.com/users/Gosia-Ras/repos?type=all`)
-      .then((response) => response.json())
-      .then((repos) => {
-        setRepos(repos);
-      });
-  }, []);
-
-  if (!repos) {
-    return (
-      <div>
-        <p>Sorry, we couldn't load resources</p>
-      </div>
-    );
-  }
+  const { repos, loading, error } = useFetchData();
 
   return (
     <PortfolioContainer>
@@ -40,26 +27,32 @@ export const Portfolio = () => {
         <PortfolioParagraph>My recent projects</PortfolioParagraph>
       </PortfolioHeaderBox>
       <ProjectsBox>
-        {repos.map(({ id, name, description, homepage, html_url }) => (
-          <ProjectCard key={id}>
-            <ProjectName>{name}</ProjectName>
-            <ProjectDescription>{description}</ProjectDescription>
-            <LinkList>
-              <ListItem>
-                Demo:
-                <ProjectLink target="_blank" rel="noreferrer" href={homepage}>
-                  See the preview
-                </ProjectLink>
-              </ListItem>
-              <ListItem>
-                Code:
-                <ProjectLink target="_blank" rel="noreferrer" href={html_url}>
-                  Repository
-                </ProjectLink>
-              </ListItem>
-            </LinkList>
-          </ProjectCard>
-        ))}
+        {error ? (
+          <Error />
+        ) : loading ? (
+          <Loader />
+        ) : (
+          repos.map(({ id, name, description, homepage, html_url }) => (
+            <ProjectCard key={id}>
+              <ProjectName>{name}</ProjectName>
+              <ProjectDescription>{description}</ProjectDescription>
+              <LinkList>
+                <ListItem>
+                  Demo:
+                  <ProjectLink target="_blank" rel="noreferrer" href={homepage}>
+                    See the preview
+                  </ProjectLink>
+                </ListItem>
+                <ListItem>
+                  Code:
+                  <ProjectLink target="_blank" rel="noreferrer" href={html_url}>
+                    Repository
+                  </ProjectLink>
+                </ListItem>
+              </LinkList>
+            </ProjectCard>
+          ))
+        )}
       </ProjectsBox>
     </PortfolioContainer>
   );

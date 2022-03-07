@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { Github } from "@styled-icons/bootstrap/Github";
 
+export const PortfolioContainer = styled.div`
+margin: 0 auto;
+width: fit-content`;
+
 export const PortfolioHeaderBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -40,11 +44,11 @@ export const PortfolioParagraph = styled.p`
 
 export const ProjectsBox = styled.div`
   display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-gap: 10px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr;
   }

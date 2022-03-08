@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "/personal-homepage/static/js/main.92e9925f.js",
-    "static/media/personal-photo.png": "/personal-homepage/static/media/personal-photo.f621fa2064d209c7c90c.png",
-    "index.html": "/personal-homepage/index.html",
-    "static/media/Message.svg": "/personal-homepage/static/media/Message.514461521cb8d76b55e16ac430346abb.svg",
-    "static/media/icon-spinner.svg": "/personal-homepage/static/media/icon-spinner.88a075cf3a7f1af15999cb03bb3a0360.svg",
-    "main.92e9925f.js.map": "/personal-homepage/static/js/main.92e9925f.js.map"
+    "main.js": "/%20//gosia-ras.github.io/personal-homepage/static/js/main.dd0343ab.js",
+    "static/media/personal-photo.png": "/%20//gosia-ras.github.io/personal-homepage/static/media/personal-photo.f621fa2064d209c7c90c.png",
+    "index.html": "/%20//gosia-ras.github.io/personal-homepage/index.html",
+    "static/media/Message.svg": "/%20//gosia-ras.github.io/personal-homepage/static/media/Message.514461521cb8d76b55e16ac430346abb.svg",
+    "static/media/icon-spinner.svg": "/%20//gosia-ras.github.io/personal-homepage/static/media/icon-spinner.88a075cf3a7f1af15999cb03bb3a0360.svg",
+    "main.dd0343ab.js.map": "/%20//gosia-ras.github.io/personal-homepage/static/js/main.dd0343ab.js.map"
   },
   "entrypoints": [
-    "static/js/main.92e9925f.js"
+    "static/js/main.dd0343ab.js"
   ]
 }

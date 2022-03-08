@@ -9,11 +9,13 @@ export const ContactSection = styled.section`
   max-width: 600px;
   padding-bottom: 110px;
   margin-top: 100px;
-align-self: stretch;
+  align-self: center;
+  margin-left: -200px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     margin-top: 50px;
     margin: 0 auto;
+    margin-left: 0;
   }
 `;
 

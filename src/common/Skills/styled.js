@@ -14,6 +14,7 @@ export const SkillsBox = styled.div`
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
   max-height: 400px;
+  transition: 0.5s;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     margin-top: 40px;

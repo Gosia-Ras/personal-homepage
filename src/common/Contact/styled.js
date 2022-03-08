@@ -9,6 +9,7 @@ export const ContactSection = styled.section`
   max-width: 600px;
   padding-bottom: 110px;
   margin-top: 100px;
+align-self: stretch;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     margin-top: 50px;

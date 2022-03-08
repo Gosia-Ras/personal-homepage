@@ -16,7 +16,7 @@ export const backgroundSecondary = theme("theme", {
 });
 
 export const iconSocialColors = theme("theme", {
-  light: "#0366D6",
+  light: "#252525",
   dark: "#DADADA",
 });
 

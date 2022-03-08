@@ -15,11 +15,11 @@ export const HeroContainer = styled.div`
 `;
 
 export const Hero = styled.img`
-  height: 350px;
+  height: 300px;
   border-radius: 200px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.larger}) {
-    max-height: 300px;
+    max-height: 250px;
     padding: 5px;
     max-width: fit-content;
     padding: 10px;

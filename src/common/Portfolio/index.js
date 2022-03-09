@@ -38,13 +38,13 @@ export const Portfolio = () => {
               <ProjectDescription>{description}</ProjectDescription>
               <LinkList>
                 <ListItem>
-                  Demo:
+                  <span>Demo:</span>
                   <ProjectLink target="_blank" rel="noreferrer" href={homepage}>
                     See the preview
                   </ProjectLink>
                 </ListItem>
                 <ListItem>
-                  Code:
+                  <span>Code:</span>
                   <ProjectLink target="_blank" rel="noreferrer" href={html_url}>
                     Repository
                   </ProjectLink>

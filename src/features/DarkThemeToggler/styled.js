@@ -5,6 +5,7 @@ export const ToggleText = styled.span`
   text-transform: uppercase;
   font-weight: 700;
   font-size: 9px;
+  padding-top: 5px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     display: none;

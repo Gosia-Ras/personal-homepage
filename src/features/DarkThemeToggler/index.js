@@ -1,7 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { TOGGLE_DARKTHEME } from "../actions";
-import { ToggleBox, ToggleInput, ToggleLabel } from "./styled";
+import { ToggleBox, ToggleText } from "./styled";
+import Switch from "react-switch";
 
 export const DarkThemeToggle = () => {
   const darkThemeEnabled = useSelector(
@@ -11,13 +12,39 @@ export const DarkThemeToggle = () => {
 
   return (
     <ToggleBox>
-      <ToggleInput
-        id="checkbox"
-        type="checkbox"
-        checked={darkThemeEnabled}
-        onChange={() => dispatch({ type: TOGGLE_DARKTHEME })}
-      />
-      <ToggleLabel htmlFor="checkbox" />
+      {darkThemeEnabled ? (
+        <>
+          <ToggleText>Dark mode off</ToggleText>
+          <Switch
+            offColor="#D1D5DA"
+            onColor="#2188FF"
+            uncheckedIcon={false}
+            checkedIcon={false}
+            height={20}
+            width={45}
+            id="checkbox"
+            type="checkbox"
+            checked={darkThemeEnabled}
+            onChange={() => dispatch({ type: TOGGLE_DARKTHEME })}
+          />
+        </>
+      ) : (
+        <>
+          <ToggleText>Dark mode on</ToggleText>
+          <Switch
+            offColor="#D1D5DA"
+            onColor="#2188FF"
+            uncheckedIcon={false}
+            checkedIcon={false}
+            height={20}
+            width={45}
+            id="checkbox"
+            type="checkbox"
+            checked={darkThemeEnabled}
+            onChange={() => dispatch({ type: TOGGLE_DARKTHEME })}
+          />
+        </>
+      )}
     </ToggleBox>
   );
 };

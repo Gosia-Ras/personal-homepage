@@ -4,13 +4,14 @@ import { textSecondaryColor } from "../../theme";
 export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
-  max-width: 1300px;
+  width: 45vw;
   margin: 0 auto;
   margin-top: 100px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     flex-direction: column;
     margin-top: 0px;
+    max-width: 80vw;
   }
 `;
 
@@ -18,7 +19,7 @@ export const Hero = styled.img`
   height: 300px;
   border-radius: 200px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.larger}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     max-height: 250px;
     padding: 5px;
     max-width: fit-content;
@@ -51,7 +52,7 @@ export const HeroHeader = styled.h1`
 export const DescriptionBox = styled.div`
   max-width: 500px;
   margin-left: 30px;
-  padding: 30px;
+  padding: 10px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     margin: 0 auto;
@@ -76,7 +77,7 @@ export const ContactButton = styled.button`
   gap: 18px;
   background-color: ${({ theme }) => theme.colors.mainBlue};
   text-decoration: none;
-  border: 1px solid ${({ theme }) => theme.colors.mainBlueLight};
+  border: 2px solid ${({ theme }) => theme.colors.mainBlueLight};
   padding: 12px 16px;
   border-radius: 4px;
   cursor: pointer;
@@ -84,6 +85,7 @@ export const ContactButton = styled.button`
 
   &:hover {
     background-color: ${({ theme }) => theme.colors.mainBlueLight};
+    border: 2px solid ${({ theme }) => theme.colors.greyDetails};
   }
 `;
 

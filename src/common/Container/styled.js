@@ -10,4 +10,5 @@ export const Container = styled.div`
   color: ${textColor};
   padding: 10px;
   transition: 0.5s;
+  overflow-x: hidden;
 `;

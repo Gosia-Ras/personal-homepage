@@ -20,7 +20,7 @@ export const SkillsBox = styled.div`
     margin-top: 40px;
     max-height: fit-content;
     max-width: fit-content;
-    min-width: 100vw;
+    min-width: 85vw;
   }
 `;
 

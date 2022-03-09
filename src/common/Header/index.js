@@ -21,7 +21,7 @@ export const Header = () => {
         <HeroHeader>Gosia Ras</HeroHeader>
         <MainParagraph>
           👩‍💻 I'm a Front-End Developer looking for new opportunities to develop!
-          Currently fascinated with React and styled-components
+          Currently fascinated with React and styled-components 💅
         </MainParagraph>
         <ContactButton>
           <img src={message} alt="email icon" />

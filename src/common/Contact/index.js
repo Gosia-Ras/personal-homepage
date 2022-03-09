@@ -18,9 +18,7 @@ export const Contact = () => {
         ras.malgorzata@gmail.com
       </ContactEmail>
       <ContactParagraph>
-        I’m always open to new projects whenever I have the time. If you have a
-        website, dashboard or mobile app in mind and need some help to make your
-        ideas come to life, feel free to contact me ✉️
+        I'm currently looking for a full-time position as a Front-End Developer. Let me know of any opportunities you might have for me! ✉️
       </ContactParagraph>
       <IconsBox>
         <a

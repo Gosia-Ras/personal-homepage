@@ -75,24 +75,26 @@ export const MainParagraph = styled.p`
 export const ContactButton = styled.button`
   display: flex;
   gap: 18px;
-  background-color: ${({ theme }) => theme.colors.mainBlue};
   text-decoration: none;
-  border: 2px solid ${({ theme }) => theme.colors.mainBlueLight};
+  border: none;
   padding: 12px 16px;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 275ms ease;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #0366d6 50%, #2188ff 50%);
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s;
+  transition: background-position 1s;
 
   &:hover {
-    background-color: ${({ theme }) => theme.colors.mainBlueLight};
-    border: 2px solid ${({ theme }) => theme.colors.greyDetails};
+    background-position: 0 -100%;
   }
 `;
 
 export const ButtonText = styled.a`
   font-style: normal;
   font-weight: 600;
-  font-size: 20.0584px;
+  font-size: 20px;
   line-height: 24px;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.textWhite};

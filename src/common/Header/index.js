@@ -20,7 +20,7 @@ export const Header = () => {
         <HeroIntro>This is</HeroIntro>
         <HeroHeader>Gosia Ras</HeroHeader>
         <MainParagraph>
-          👩‍💻 I'm a Front-End Developer looking for new opportunities to develop!
+          👩‍💻 I'm a Front-End Developer looking for new professional opportunities!
           Currently fascinated with React and styled-components 💅
         </MainParagraph>
         <ContactButton>

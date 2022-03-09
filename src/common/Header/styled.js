@@ -4,9 +4,9 @@ import { textSecondaryColor } from "../../theme";
 export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
-  width: 45vw;
   margin: 0 auto;
   margin-top: 100px;
+  max-width: 75vw;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     flex-direction: column;

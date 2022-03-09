@@ -13,9 +13,11 @@ export const GlobalStyle = createGlobalStyle`
   body {
    font-family: 'Inter', sans-serif;
    height: 100vh;
+   min-width: 100vw;
    overflow-x: hidden;
    margin: 0;
    background-color: ${backgroundColor};
+   padding: 0;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
    margin: 0 auto;

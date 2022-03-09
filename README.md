@@ -1,12 +1,14 @@
 # Personal Homepage ✨
 
 - [Personal Homepage ✨](#personal-homepage-)
+  - [Demo](#demo)
   - [Description](#description)
   - [Tools](#tools)
   - [Available Scripts](#available-scripts)
-    - [`npm start`](#npm-start)
-    - [`npm test`](#npm-test)
-    - [`npm run eject`](#npm-run-eject)
+
+# Demo
+
+[Click here to view](https://gosia-ras.github.io/personal-homepage/)
 
 ## Description
 

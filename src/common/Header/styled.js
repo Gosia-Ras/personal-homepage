@@ -6,7 +6,7 @@ export const HeroContainer = styled.div`
   justify-content: center;
   margin: 0 auto;
   margin-top: 100px;
-  max-width: 75vw;
+  max-width: 85vw;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     flex-direction: column;

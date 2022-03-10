@@ -6,8 +6,8 @@ import { backgroundSecondary, textSecondaryColor } from "../../theme";
 export const SkillsBox = styled.div`
   background-color: ${backgroundSecondary};
   border-radius: 4px;
-  max-width: 1216px;
-  min-width: 850px;
+  max-width: 80vw;
+  min-width: 1000px;
   margin: 0 auto;
   padding: 15px;
   margin-top: 63px;

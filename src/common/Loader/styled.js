@@ -15,8 +15,16 @@ export const LoaderBox = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    margin-top: 20px;
+  }
 `;
 
 export const Loading = styled(loading)`
   animation: ${rotate} 1s linear infinite;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    max-width: 20vw;
+  }
 `;

@@ -3,9 +3,9 @@ import { Github } from "@styled-icons/bootstrap/Github";
 import { Facebook } from "@styled-icons/bootstrap/Facebook";
 import { LinkedinWithCircle } from "@styled-icons/entypo-social/LinkedinWithCircle";
 import { InstagramWithCircle } from "@styled-icons/entypo-social/InstagramWithCircle";
-import { iconSocialColors, textColor } from "../../theme";
+import { iconSocialColors, textColor } from "../../../common/theme";
 
-export const ContactSection = styled.section`
+export const ContactSection = styled.footer`
   max-width: 600px;
   padding-bottom: 110px;
   margin-top: 100px;

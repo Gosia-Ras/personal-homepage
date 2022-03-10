@@ -5,7 +5,7 @@ import {
   ToolsIcon,
   RocketIcon,
 } from "./styled";
-import { SkillsListed, SkillsToDo } from "../../features/getSkillsList";
+import { SkillsListed, SkillsToDo } from "../../../common/getSkillsList";
 
 export const Skills = () => {
   return (

@@ -5,7 +5,7 @@ import {
   projectBoxBorder,
   projectTitle,
   textSecondaryColor,
-} from "../../theme";
+} from "../../../common/theme";
 
 export const PortfolioContainer = styled.div`
   margin: 0 auto;

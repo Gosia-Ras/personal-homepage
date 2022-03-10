@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { textSecondaryColor } from "../../theme";
+import { textSecondaryColor } from "../../../common/theme";
 
 export const HeroContainer = styled.div`
   display: flex;

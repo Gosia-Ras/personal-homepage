@@ -13,7 +13,7 @@ import {
   ProjectsBox,
 } from "./styled";
 import { Loader } from "../Loader";
-import useFetchData from "../../features/useFetchData";
+import useFetchData from "../../useFetchData";
 import { Error } from "../Error";
 
 export const Portfolio = () => {

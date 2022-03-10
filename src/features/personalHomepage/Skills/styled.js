@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Tools } from "@styled-icons/bootstrap/Tools";
 import { Rocket } from "@styled-icons/ionicons-outline/Rocket";
-import { backgroundSecondary, textSecondaryColor } from "../../theme";
+import { backgroundSecondary, textSecondaryColor } from "../../../common/theme";
 
 export const SkillsBox = styled.div`
   background-color: ${backgroundSecondary};

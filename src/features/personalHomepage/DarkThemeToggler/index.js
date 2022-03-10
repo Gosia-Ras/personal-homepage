@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { TOGGLE_DARKTHEME } from "../actions";
+import { TOGGLE_DARKTHEME } from "../../../core/actions";
 import { ToggleBox, ToggleText } from "./styled";
 import Switch from "react-switch";
 

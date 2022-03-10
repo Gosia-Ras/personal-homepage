@@ -10,7 +10,7 @@ import {
   LinkedinIcon,
 } from "./styled";
 
-export const Contact = () => {
+export const Footer = () => {
   return (
     <ContactSection>
       <ContactHeader>Let's talk!</ContactHeader>

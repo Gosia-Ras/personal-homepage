@@ -1,5 +1,5 @@
-import photo from "../../assets/personal-photo.png";
-import message from "../../assets/Message.svg";
+import photo from "../../../assets/personal-photo.png";
+import message from "../../../assets/Message.svg";
 import {
   Hero,
   HeroContainer,
@@ -10,7 +10,7 @@ import {
   HeroHeader,
   HeroIntro,
 } from "./styled";
-import { DarkThemeToggle } from "../../features/DarkThemeToggler";
+import { DarkThemeToggle } from "../DarkThemeToggler";
 
 export const Header = () => {
   return (

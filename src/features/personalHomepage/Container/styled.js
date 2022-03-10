@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { backgroundColor, textColor } from "../../../common/theme";
+import { backgroundColor, textColor } from "../../../core/App/theme";
 
 export const Container = styled.div`
   width: 100vw;

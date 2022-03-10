@@ -1,3 +1,4 @@
+import { email } from "../email";
 import {
   ContactEmail,
   ContactHeader,
@@ -8,23 +9,26 @@ import {
   IconsBox,
   InstagramIcon,
   LinkedinIcon,
+  Address
 } from "./styled";
 
 export const Footer = () => {
   return (
     <ContactSection>
       <ContactHeader>Let's talk!</ContactHeader>
-      <ContactEmail href="ras.malgorzata@gmail.com">
-        ras.malgorzata@gmail.com
-      </ContactEmail>
+      <Address>
+        <ContactEmail href={`mailto:${email}`}>{email}</ContactEmail>
+      </Address>
       <ContactParagraph>
-        I'm currently looking for a full-time position as a Front-End Developer. Let me know of any opportunities you might have for me! ✉️
+        I'm currently looking for a full-time position as a Front-End Developer.
+        Let me know of any opportunities you might have for me! ✉️
       </ContactParagraph>
       <IconsBox>
         <a
           href="https://github.com/Gosia-Ras"
           rel="noreferrer noopener"
           target="_blank"
+          title="GitHub Profile"
         >
           <GitHubIcon />
         </a>
@@ -32,6 +36,7 @@ export const Footer = () => {
           href="https://www.facebook.com/gosia.ras.5"
           rel="noreferrer noopener"
           target="_blank"
+          title="Facebook profile"
         >
           <FacebookIcon />
         </a>
@@ -39,6 +44,7 @@ export const Footer = () => {
           href="https://www.linkedin.com/in/malgorzata-ras/"
           rel="noreferrer noopener"
           target="_blank"
+          title="LinkedIn Profile"
         >
           <LinkedinIcon />
         </a>
@@ -46,6 +52,7 @@ export const Footer = () => {
           href="https://www.instagram.com/diary_of_gosia/"
           rel="noreferrer noopener"
           target="_blank"
+          title="Instagram profile"
         >
           <InstagramIcon />
         </a>

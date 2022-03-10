@@ -5,14 +5,14 @@ import {
   projectBoxBorder,
   projectTitle,
   textSecondaryColor,
-} from "../../../common/theme";
+} from "../../../core/App/theme";
 
-export const PortfolioContainer = styled.div`
+export const PortfolioContainer = styled.section`
   margin: 0 auto;
   width: fit-content;
 `;
 
-export const PortfolioHeaderBox = styled.div`
+export const PortfolioHeaderBox = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,11 +25,10 @@ export const PortfolioIcon = styled(Github)`
   margin: 5px;
 `;
 
-export const PortfolioHeader = styled.h2`
+export const PortfolioHeader = styled.h3`
   font-weight: 900;
   font-size: 30px;
-  line-height: 37px;
-  letter-spacing: 5%;
+  line-height: 2.2;
   text-align: center;
   margin: 5px;
 
@@ -40,8 +39,7 @@ export const PortfolioHeader = styled.h2`
 export const PortfolioParagraph = styled.p`
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
-  letter-spacing: 5%;
+  line-height: 1.6;
   margin: 5px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
@@ -79,7 +77,6 @@ export const ProjectCard = styled.div`
 export const ProjectName = styled.h3`
   font-weight: 700;
   font-size: 24px;
-  letter-spacing: 5%;
   color: ${projectTitle};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
@@ -89,7 +86,6 @@ export const ProjectName = styled.h3`
 export const ProjectDescription = styled.p`
   font-weight: 400;
   font-size: 18px;
-  letter-spacing: 5%;
   color: ${textSecondaryColor};
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
@@ -105,7 +101,6 @@ export const LinkList = styled.ul`
 export const ListItem = styled.li`
   font-weight: 400;
   font-size: 18px;
-  letter-spacing: 5%;
   color: ${textSecondaryColor};
   display: grid;
   grid-auto-columns: 1fr;

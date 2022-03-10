@@ -1,7 +1,6 @@
 import React from "react";
 import { Provider as ReduxProvider } from "react-redux";
 import store from "../store";
-import Normalize from "react-normalize";
 import DarkThemeProvider from "../../common/DarkThemeProvider";
 import { AppContainer } from "../../features/personalHomepage/Container";
 import { Header } from "../../features/personalHomepage/Header";
@@ -12,11 +11,12 @@ import { Footer } from "../../features/personalHomepage/Footer";
 export const App = () => (
   <ReduxProvider store={store}>
     <DarkThemeProvider>
-      <Normalize />
       <AppContainer>
         <Header />
-        <Skills />
-        <Portfolio />
+        <main>
+          <Skills />
+          <Portfolio />
+        </main>
         <Footer />
       </AppContainer>
     </DarkThemeProvider>

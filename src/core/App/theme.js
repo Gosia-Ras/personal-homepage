@@ -48,7 +48,5 @@ export const defaultTheme = {
     small: "480px",
     medium: "767px",
     large: "992px",
-    extraLarge: "1280px",
-    container: "1368px",
   },
 };

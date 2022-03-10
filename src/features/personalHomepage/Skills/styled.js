@@ -1,13 +1,12 @@
 import styled from "styled-components";
 import { Tools } from "@styled-icons/bootstrap/Tools";
 import { Rocket } from "@styled-icons/ionicons-outline/Rocket";
-import { backgroundSecondary, textSecondaryColor } from "../../../common/theme";
+import { backgroundSecondary, textSecondaryColor } from "../../../core/App/theme";
 
-export const SkillsBox = styled.div`
+export const SkillsBox = styled.section`
   background-color: ${backgroundSecondary};
   border-radius: 4px;
-  max-width: 80vw;
-  min-width: 1000px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 15px;
   margin-top: 63px;
@@ -19,8 +18,7 @@ export const SkillsBox = styled.div`
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     margin-top: 40px;
     max-height: fit-content;
-    max-width: fit-content;
-    min-width: 85vw;
+    max-width: 85vw;
   }
 `;
 
@@ -29,10 +27,9 @@ export const SkillsContainer = styled.div`
   margin: 0 auto;
 `;
 
-export const SkillsHeader = styled.h1`
+export const SkillsHeader = styled.h2`
   font-weight: 900;
   font-size: 30px;
-  line-height: 36px;
   margin-left: 24px;
   margin-right: 35px;
   display: flex;
@@ -66,7 +63,7 @@ export const ListItem = styled.li`
   font-size: 17px;
   font-weight: 400;
   color: ${textSecondaryColor};
-  line-height: 25px;
+  line-height: 1.;
 
   &:before {
     content: "• ";

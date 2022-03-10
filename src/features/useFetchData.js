@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
+const APIBaseURL =
+  "https://api.github.com/users/Gosia-Ras/repos?type=all&sort=updated&per_page=6";
+
 const useFetchData = () => {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -9,9 +12,7 @@ const useFetchData = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const { data: response } = await axios.get(
-          "https://api.github.com/users/Gosia-Ras/repos?type=all&sort=updated&per_page=6"
-        );
+        const { data: response } = await axios.get(`${APIBaseURL}`);
         setRepos(response);
       } catch (error) {
         setError(true);

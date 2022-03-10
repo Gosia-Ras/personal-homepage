@@ -17,8 +17,7 @@ export const Triangle = styled(ExclamationTriangle)`
 export const ErrorText = styled.p`
   font-size: 20px;
   font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 5%;
+  line-height: 1.3;
   text-align: center;
 
   ${({ top }) =>
@@ -46,7 +45,7 @@ export const GitHubButtonText = styled.a`
   font-style: normal;
   font-weight: 600;
   font-size: 20.0584px;
-  line-height: 24px;
+  line-height: 1.4;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.textWhite};
 `;

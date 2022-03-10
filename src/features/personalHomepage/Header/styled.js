@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { textSecondaryColor } from "../../../common/theme";
+import { textSecondaryColor } from "../../../core/App/theme";
 
-export const HeroContainer = styled.div`
+export const HeroContainer = styled.header`
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -16,15 +16,10 @@ export const HeroContainer = styled.div`
 `;
 
 export const Hero = styled.img`
-  height: 300px;
-  border-radius: 200px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
-    max-height: 250px;
-    padding: 5px;
-    max-width: fit-content;
-    padding: 10px;
-  }
+  max-height: 25vw;
+  width: auto;
+  border-radius: 50%;
+  margin-right: 20px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     width: 135px;
@@ -35,14 +30,14 @@ export const Hero = styled.img`
 export const HeroIntro = styled.span`
   font-weight: 700;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 0.5;
   text-transform: uppercase;
   color: ${textSecondaryColor};
+  letter-spacing: initial;
 `;
 
 export const HeroHeader = styled.h1`
   font-size: 38px;
-  letter-spacing: 5%;
   font-weight: 900;
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     font-size: 22px;
@@ -63,7 +58,7 @@ export const DescriptionBox = styled.div`
 
 export const MainParagraph = styled.p`
   font-size: 20px;
-  line-height: 28px;
+  line-height: 1.5;
   font-weight: 400;
   color: ${textSecondaryColor};
 
@@ -72,12 +67,13 @@ export const MainParagraph = styled.p`
   }
 `;
 
-export const ContactButton = styled.button`
+export const ContactButton = styled.span`
   display: flex;
   gap: 18px;
   text-decoration: none;
   border: none;
-  padding: 12px 16px;
+  padding: 15px;
+  max-width: fit-content;
   border-radius: 4px;
   cursor: pointer;
   background-size: 100% 200%;
@@ -95,7 +91,7 @@ export const ButtonText = styled.a`
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.2;
   text-decoration: none;
   color: ${({ theme }) => theme.colors.textWhite};
 `;

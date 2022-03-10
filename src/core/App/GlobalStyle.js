@@ -16,8 +16,10 @@ export const GlobalStyle = createGlobalStyle`
    min-width: 100vw;
    overflow-x: hidden;
    margin: 0;
-   background-color: ${backgroundColor};
+   background: ${backgroundColor};
    padding: 0;
+   transition: background 0.3s;
+   letter-spacing: 0.05em;
 
     @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
    margin: 0 auto;

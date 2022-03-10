@@ -5,7 +5,8 @@ export const ToggleText = styled.span`
   text-transform: uppercase;
   font-weight: 700;
   font-size: 9px;
-  padding-top: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     display: none;
@@ -14,7 +15,6 @@ export const ToggleText = styled.span`
 
 export const ToggleBox = styled.div`
   display: flex;
-  gap: 10px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     align-self: flex-end;

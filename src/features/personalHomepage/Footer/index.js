@@ -9,7 +9,7 @@ import {
   IconsBox,
   InstagramIcon,
   LinkedinIcon,
-  Address
+  Address,
 } from "./styled";
 
 export const Footer = () => {
@@ -21,7 +21,7 @@ export const Footer = () => {
       </Address>
       <ContactParagraph>
         I'm currently looking for a full-time position as a Front-End Developer.
-        Let me know of any opportunities you might have for me! ✉️
+        Let&nbsp;me know of any opportunities you might have for me! ✉️
       </ContactParagraph>
       <IconsBox>
         <a

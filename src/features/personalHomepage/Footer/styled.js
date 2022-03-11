@@ -6,18 +6,19 @@ import { InstagramWithCircle } from "@styled-icons/entypo-social/InstagramWithCi
 import { iconSocialColors, textColor } from "../../../core/App/theme";
 
 export const ContactSection = styled.footer`
-  padding: 110px 135px 110px 0px;
+  padding: 110px 400px 110px 0px;
   align-self: flex-start;
   margin: 0 auto;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     margin-top: 50px;
     margin-left: 0;
-    padding: 50px;
+    padding: 0px 0px 50px 10px;
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     padding: 10px;
+    margin-top: 20px;
   }
 `;
 
@@ -44,7 +45,7 @@ export const ContactEmail = styled.a`
   transition: color 0.3s linear;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   &:hover {
@@ -57,11 +58,11 @@ export const ContactParagraph = styled.p`
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: initial;
-  max-width: 670px;
+  max-width: 600px;
   margin-left: 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
-    font-size: 14px;
+    font-size: 16px;
   }
 `;
 

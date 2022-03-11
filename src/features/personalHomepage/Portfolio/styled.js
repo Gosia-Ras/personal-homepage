@@ -6,10 +6,11 @@ import {
   projectTitle,
   textSecondaryColor,
 } from "../../../core/App/theme";
+import α from "color-alpha";
 
 export const PortfolioContainer = styled.section`
   margin: 0 auto;
-  width: fit-content;
+  max-width: 1000px;
 `;
 
 export const PortfolioHeaderBox = styled.header`
@@ -25,7 +26,7 @@ export const PortfolioIcon = styled(Github)`
   margin: 5px;
 `;
 
-export const PortfolioHeader = styled.h3`
+export const PortfolioHeader = styled.h2`
   font-weight: 900;
   font-size: 30px;
   line-height: 2.2;
@@ -47,31 +48,31 @@ export const PortfolioParagraph = styled.p`
   }
 `;
 
-export const ProjectsBox = styled.div`
+export const ProjectsBox = styled.ul`
   display: grid;
-  grid-template-columns: 400px 1fr;
-  grid-gap: 10px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    grid-auto-columns: 1fr;
-    grid-template-columns: 1fr;
-  }
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+  padding: 0;
+  list-style: none;
 `;
 
-export const ProjectCard = styled.div`
+export const ProjectCard = styled.li`
   border: 6px solid ${projectBoxBorder};
-  padding: 15px;
+  padding: 10px 40px 10px 40px;
   background-color: ${backgroundSecondary};
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
-  max-width: 400px;
-  word-break: keep-all;
+  margin: 0 auto;
   transition: border 275ms ease;
 
   &:hover {
     border: 6px solid rgba(3, 102, 214, 0.2);
   } //find other solution for color
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    padding: 25px;
+  }
 `;
 
 export const ProjectName = styled.h3`
@@ -93,20 +94,16 @@ export const ProjectDescription = styled.p`
   }
 `;
 
-export const LinkList = styled.ul`
-  list-style: none;
+export const Links = styled.div`
   padding-left: 0;
 `;
 
-export const ListItem = styled.li`
+export const ListItem = styled.dl`
   font-weight: 400;
   font-size: 18px;
   color: ${textSecondaryColor};
   display: grid;
-  grid-auto-columns: 1fr;
-  grid-template-columns: 0.3fr 1.2fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 0px 5px;
+  grid-template-columns: 0.2fr 1fr;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     font-size: 15px;
@@ -115,12 +112,13 @@ export const ListItem = styled.li`
 
 export const ProjectLink = styled.a`
   text-decoration: none;
-  border-bottom: 1px solid ${({ theme }) => theme.mainBlueLight};
+  border-bottom: 1px solid ${({ theme }) => α(theme.colors.mainBlueLight, 0.3)};
   color: ${({ theme }) => theme.colors.mainBlue};
   transition: color 375ms ease;
   max-width: max-content;
 
   &:hover {
     color: ${({ theme }) => theme.colors.mainBlueLight};
+    border-color: unset;
   }
 `;

@@ -1,5 +1,6 @@
+import useFetchData from "../../useFetchData";
 import {
-  LinkList,
+  Links,
   ListItem,
   PortfolioContainer,
   PortfolioHeader,
@@ -12,9 +13,8 @@ import {
   ProjectName,
   ProjectsBox,
 } from "./styled";
-import { Loader } from "../Loader";
-import useFetchData from "../../useFetchData";
-import { Error } from "../Error";
+import { Loader } from "./Content/Loader";
+import { Error } from "./Content/Error";
 
 export const Portfolio = () => {
   const { repos, loading, error } = useFetchData();
@@ -36,20 +36,32 @@ export const Portfolio = () => {
             <ProjectCard key={id}>
               <ProjectName>{name}</ProjectName>
               <ProjectDescription>{description}</ProjectDescription>
-              <LinkList>
+              <Links>
                 <ListItem>
-                  <span>Demo:</span>
-                  <ProjectLink target="_blank" rel="noreferrer" href={homepage}>
-                    See the preview
-                  </ProjectLink>
+                  <dt>Demo:</dt>
+                  <dd>
+                    <ProjectLink
+                      target="_blank"
+                      rel="noreferrer"
+                      href={homepage}
+                    >
+                      See the preview
+                    </ProjectLink>
+                  </dd>
                 </ListItem>
                 <ListItem>
-                  <span>Code:</span>
-                  <ProjectLink target="_blank" rel="noreferrer" href={html_url}>
-                    Repository
-                  </ProjectLink>
+                  <dt>Code:</dt>
+                  <dd>
+                    <ProjectLink
+                      target="_blank"
+                      rel="noreferrer"
+                      href={html_url}
+                    >
+                      Repository
+                    </ProjectLink>
+                  </dd>
                 </ListItem>
-              </LinkList>
+              </Links>
             </ProjectCard>
           ))
         )}

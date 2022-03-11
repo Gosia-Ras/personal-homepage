@@ -1,31 +1,14 @@
-import {
-  SkillsContainer,
-  SkillsBox,
-  SkillsHeader,
-  ToolsIcon,
-  RocketIcon,
-} from "./styled";
-import { SkillsListed, SkillsToDo } from "../../../common/getSkillsList";
+import { SkillsBox, SkillsHeader, ListItem, SkillsList } from "./styled";
 
-export const Skills = () => {
+export const Skills = ({ title, skills }) => {
   return (
-    <>
-      <SkillsBox>
-        <SkillsHeader>
-          My skillset includes <ToolsIcon />
-        </SkillsHeader>
-        <SkillsContainer>
-          <SkillsListed />
-        </SkillsContainer>
-      </SkillsBox>
-      <SkillsBox>
-        <SkillsHeader>
-          What I want to learn next <RocketIcon />
-        </SkillsHeader>
-        <SkillsContainer>
-          <SkillsToDo />
-        </SkillsContainer>
-      </SkillsBox>
-    </>
+    <SkillsBox>
+      <SkillsHeader>{title}</SkillsHeader>
+      <SkillsList>
+        {skills.map((skill) => (
+          <ListItem key={skill}>{skill}</ListItem>
+        ))}
+      </SkillsList>
+    </SkillsBox>
   );
 };

@@ -22,11 +22,6 @@ export const SkillsBox = styled.section`
   }
 `;
 
-export const SkillsContainer = styled.div`
-  max-width: 1151px;
-  margin: 0 auto;
-`;
-
 export const SkillsHeader = styled.h2`
   font-weight: 900;
   font-size: 30px;
@@ -63,7 +58,7 @@ export const ListItem = styled.li`
   font-size: 17px;
   font-weight: 400;
   color: ${textSecondaryColor};
-  line-height: 1.;
+  line-height: 1;
 
   &:before {
     content: "• ";

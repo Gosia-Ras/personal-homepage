@@ -7,6 +7,14 @@ import { Header } from "../../features/personalHomepage/Header";
 import { Skills } from "../../features/personalHomepage/Skills";
 import { Portfolio } from "../../features/personalHomepage/Portfolio";
 import { Footer } from "../../features/personalHomepage/Footer";
+import {
+  ToolsIcon,
+  RocketIcon,
+} from "../../features/personalHomepage/Skills/styled";
+import {
+  goals,
+  skills,
+} from "../../features/personalHomepage/Skills/skillsData";
 
 export const App = () => (
   <ReduxProvider store={store}>
@@ -14,7 +22,22 @@ export const App = () => (
       <AppContainer>
         <Header />
         <main>
-          <Skills />
+          <Skills
+            title={
+              <>
+                My skillset includes <ToolsIcon />
+              </>
+            }
+            skills={skills}
+          />
+          <Skills
+            title={
+              <>
+                What I want to learn next <RocketIcon />
+              </>
+            }
+            skills={goals}
+          />
           <Portfolio />
         </main>
         <Footer />

@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import {backgroundColor} from "./theme"
+import { backgroundColor } from "./theme";
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -13,10 +13,10 @@ export const GlobalStyle = createGlobalStyle`
   body {
    font-family: 'Inter', sans-serif;
    height: 100vh;
-   min-width: 100vw;
+   width: 100vw;
    overflow-x: hidden;
    margin: 0;
-   background: ${backgroundColor};
+    background: ${backgroundColor};
    padding: 0;
    transition: background 0.3s;
    letter-spacing: 0.05em;

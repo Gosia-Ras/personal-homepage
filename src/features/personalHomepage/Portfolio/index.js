@@ -26,6 +26,7 @@ export const Portfolio = () => {
         <PortfolioHeader>Portfolio</PortfolioHeader>
         <PortfolioParagraph>My recent projects</PortfolioParagraph>
       </PortfolioHeaderBox>
+      <>
       <ProjectsBox>
         {error ? (
           <Error />
@@ -65,7 +66,7 @@ export const Portfolio = () => {
             </ProjectCard>
           ))
         )}
-      </ProjectsBox>
+      </ProjectsBox></>
     </PortfolioContainer>
   );
 };

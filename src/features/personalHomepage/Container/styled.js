@@ -8,7 +8,7 @@ export const Container = styled.div`
   font-family: sans-serif;
   background-color: ${backgroundColor};
   color: ${textColor};
-  padding: 10px;
+  padding: 20px;
   transition: 0.5s;
-  overflow-x: hidden;
+  margin: 0 auto;
 `;

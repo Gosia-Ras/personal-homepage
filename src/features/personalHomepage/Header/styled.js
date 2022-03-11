@@ -16,14 +16,15 @@ export const HeroContainer = styled.header`
 `;
 
 export const Hero = styled.img`
-  max-height: 25vw;
-  width: auto;
+  max-width: 300px;
+  max-height: 300px;
+  width: 30vw;
   border-radius: 50%;
   margin-right: 20px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    width: 135px;
-    height: 135px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    width: 132.67px;
+    height: 132.67px;
   }
 `;
 

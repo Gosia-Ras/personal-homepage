@@ -7,7 +7,13 @@ export const ErrorBox = styled.div`
   align-items: center;
   max-width: 400px;
   text-align: center;
-  margin: 20px;
+  margin: 0 auto;
+  position: relative; //due to grid layout of ProjectBox
+  left: 53%;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    left: 0%;
+  }
 `;
 
 export const Triangle = styled(ExclamationTriangle)`

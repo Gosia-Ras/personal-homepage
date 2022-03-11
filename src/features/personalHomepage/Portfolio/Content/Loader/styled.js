@@ -10,21 +10,13 @@ const rotate = keyframes`
   }
 `;
 
-export const LoaderBox = styled.div`
-  margin-top: 100px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
-    margin-top: 20px;
-  }
-`;
-
 export const Loading = styled(loading)`
   animation: ${rotate} 1s linear infinite;
+  position: relative; //due to grid layout of ProjectBox
+  left: 85%;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     max-width: 20vw;
+    left: 37%;
   }
 `;

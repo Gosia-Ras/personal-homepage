@@ -1,9 +1,5 @@
-import { LoaderBox, Loading } from "./styled";
+import { Loading } from "./styled";
 
 export const Loader = () => {
-  return (
-    <LoaderBox>
-      <Loading />
-    </LoaderBox>
-  );
+  return <Loading />;
 };

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 import { Github } from "@styled-icons/bootstrap/Github";
 import {
   backgroundSecondary,
@@ -11,6 +11,11 @@ import α from "color-alpha";
 export const PortfolioContainer = styled.section`
   margin: 0 auto;
   max-width: 1000px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    width: 90vw;
+    padding: 10px;
+  }
 `;
 
 export const PortfolioHeaderBox = styled.header`
@@ -54,6 +59,11 @@ export const ProjectsBox = styled.ul`
   grid-gap: 32px;
   padding: 0;
   list-style: none;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    grid-template-columns: 1fr;
+    grid-gap: 23px;
+  }
 `;
 
 export const ProjectCard = styled.li`

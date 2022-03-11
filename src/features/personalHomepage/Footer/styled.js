@@ -17,7 +17,7 @@ export const ContactSection = styled.footer`
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    padding: 20px;
+    padding: 10px;
   }
 `;
 

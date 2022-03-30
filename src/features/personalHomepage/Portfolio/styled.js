@@ -11,11 +11,6 @@ import α from "color-alpha";
 export const PortfolioContainer = styled.section`
   margin: 0 auto;
   max-width: 1000px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    max-width: 90vw;
-    padding: 20px;
-  }
 `;
 
 export const PortfolioHeaderBox = styled.header`
@@ -82,6 +77,10 @@ export const ProjectCard = styled.li`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     padding: 25px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    padding: 20px;
   }
 `;
 

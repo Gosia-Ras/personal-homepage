@@ -2,7 +2,7 @@ import React from "react";
 import { Provider as ReduxProvider } from "react-redux";
 import store from "../store";
 import DarkThemeProvider from "../DarkThemeProvider";
-import { AppContainer } from "../../features/personalHomepage/Container";
+import { AppContainer } from "../../features/personalHomepage/AppContainer";
 import { Header } from "../../features/personalHomepage/Header";
 import { Skills } from "../../features/personalHomepage/Skills";
 import { Portfolio } from "../../features/personalHomepage/Portfolio";

@@ -1,7 +1,7 @@
 import theme from "styled-theming";
 
 export const backgroundColor = theme("theme", {
-  light: "#E5E5E5",
+  light: "#FBFBFE",
   dark: "#252525",
 });
 
@@ -21,7 +21,7 @@ export const iconSocialColors = theme("theme", {
 });
 
 export const projectBoxBorder = theme("theme", {
-  light: "#D1D5DA",
+  light: "#E4E8EC",
   dark: "#25282D",
 });
 

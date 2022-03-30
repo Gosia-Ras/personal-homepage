@@ -12,11 +12,11 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
    font-family: 'Inter', sans-serif;
-   height: 100vh;
-   width: 100vw;
+   max-height: 100vh;
+   max-width: 100vw;
    overflow-x: hidden;
    margin: 0;
-    background: ${backgroundColor};
+  background: ${backgroundColor};
    padding: 0;
    transition: background 0.3s;
    letter-spacing: 0.05em;

@@ -1,6 +1,6 @@
 export const skills = [
-  "HTML5",
-  "CSS3",
+  "HTML",
+  "CSS",
   "JavaScript",
   "React",
   "React Hooks",

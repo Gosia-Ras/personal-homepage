@@ -27,12 +27,12 @@ export const projectBoxBorder = theme("theme", {
 
 export const projectTitle = theme("theme", {
   light: "#0366D6",
-  dark: "#FFFFFF"
+  dark: "#FFFFFF",
 });
 
 export const textSecondaryColor = theme("theme", {
   light: "#6E7E91",
-  dark: "#FFFFFF"
+  dark: "#FFFFFF",
 });
 
 export const defaultTheme = {
@@ -42,8 +42,9 @@ export const defaultTheme = {
     textSecondary: "#6E7E91",
     backgroundSecondary: "#FFFFFF",
     greyDetails: "#D1D5DA",
-    textWhite: "#FFFFFF"
+    textWhite: "#FFFFFF",
   },
+
   breakpoints: {
     small: "480px",
     medium: "767px",

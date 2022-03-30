@@ -37,6 +37,7 @@ export const PortfolioHeader = styled.h2`
     font-size: 25px;
   }
 `;
+
 export const PortfolioParagraph = styled.p`
   font-weight: 400;
   font-size: 20px;
@@ -97,6 +98,7 @@ export const ProjectName = styled.h3`
     font-size: 18px;
   }
 `;
+
 export const ProjectDescription = styled.p`
   font-weight: 400;
   font-size: 18px;

@@ -2,9 +2,6 @@ import styled, { keyframes } from "styled-components";
 import { ReactComponent as loading } from "./icon-spinner.svg";
 
 const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
   to {
     transform: rotate(360deg);
   }

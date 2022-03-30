@@ -6,7 +6,7 @@ import Switch from "react-switch";
 
 export const DarkThemeToggle = () => {
   const darkThemeEnabled = useSelector(
-    (state) => state.preferences.darkThemeEnabled
+    (state) => state.userThemePreference.darkThemeEnabled
   );
   
   const dispatch = useDispatch();

@@ -9,6 +9,6 @@ export const Container = styled.div`
   background-color: ${backgroundColor};
   color: ${textColor};
   padding: 20px;
-  transition: 0.5s;
+  transition: background 0.5s;
   margin: 0 auto;
 `;

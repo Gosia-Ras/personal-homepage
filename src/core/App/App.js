@@ -1,7 +1,7 @@
 import React from "react";
 import { Provider as ReduxProvider } from "react-redux";
 import store from "../store";
-import DarkThemeProvider from "../../common/DarkThemeProvider";
+import DarkThemeProvider from "../DarkThemeProvider";
 import { AppContainer } from "../../features/personalHomepage/Container";
 import { Header } from "../../features/personalHomepage/Header";
 import { Skills } from "../../features/personalHomepage/Skills";

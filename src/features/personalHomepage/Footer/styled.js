@@ -48,6 +48,10 @@ export const ContactEmail = styled.a`
     font-size: 22px;
   }
 
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    font-size: 16px;
+  }
+
   &:hover {
     color: ${({ theme }) => theme.colors.mainBlue};
   }
@@ -63,6 +67,10 @@ export const ContactParagraph = styled.p`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     font-size: 16px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+    font-size: 13px;
   }
 `;
 

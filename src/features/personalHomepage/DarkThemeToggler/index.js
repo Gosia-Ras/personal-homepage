@@ -8,6 +8,7 @@ export const DarkThemeToggle = () => {
   const darkThemeEnabled = useSelector(
     (state) => state.preferences.darkThemeEnabled
   );
+  
   const dispatch = useDispatch();
 
   return (

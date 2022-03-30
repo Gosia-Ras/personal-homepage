@@ -1,5 +1,5 @@
-import photo from "../../../assets/personal-photo.png";
-import message from "../../../assets/Message.svg";
+import photo from "./personal-photo.png";
+import message from "./message.svg";
 import {
   Hero,
   HeroContainer,

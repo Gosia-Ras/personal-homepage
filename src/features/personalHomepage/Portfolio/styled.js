@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 import { Github } from "@styled-icons/bootstrap/Github";
 import {
   backgroundSecondary,
@@ -13,8 +13,8 @@ export const PortfolioContainer = styled.section`
   max-width: 1000px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    width: 90vw;
-    padding: 10px;
+    max-width: 90vw;
+    padding: 20px;
   }
 `;
 
@@ -56,13 +56,13 @@ export const PortfolioParagraph = styled.p`
 export const ProjectsBox = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 32px;
+  grid-gap: 28px;
   padding: 0;
   list-style: none;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     grid-template-columns: 1fr;
-    grid-gap: 23px;
+    grid-gap: 18px;
   }
 `;
 
@@ -93,6 +93,10 @@ export const ProjectName = styled.h3`
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     font-size: 20px;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    font-size: 18px;
+  }
 `;
 export const ProjectDescription = styled.p`
   font-weight: 400;
@@ -101,6 +105,10 @@ export const ProjectDescription = styled.p`
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     font-size: 16px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    font-size: 14px;
   }
 `;
 

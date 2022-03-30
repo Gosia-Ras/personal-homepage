@@ -14,7 +14,7 @@ import {
 
 export const Footer = () => {
   return (
-    <ContactSection>
+    <ContactSection id="contact">
       <ContactHeader>Let's talk!</ContactHeader>
       <Address>
         <ContactEmail href={`mailto:${email}`}>{email}</ContactEmail>

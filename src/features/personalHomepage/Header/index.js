@@ -20,18 +20,13 @@ export const Header = () => {
         <HeroIntro>This is</HeroIntro>
         <HeroHeader>Gosia Ras</HeroHeader>
         <MainParagraph>
-          👩‍💻 I'm a Front-End Developer looking for new professional opportunities!
-          Currently fascinated with React and styled-components 💅
+          👩‍💻 I'm a Front-End Developer looking for new professional
+          opportunities! Currently fascinated with React and styled-components
+          💅
         </MainParagraph>
         <ContactButton>
           <img src={message} alt="email icon" />
-          <ButtonText
-            href="mailto:ras.malgorzata@gmail.com"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            Hire Me
-          </ButtonText>
+          <ButtonText href="#contact">Hire Me</ButtonText>
         </ContactButton>
       </DescriptionBox>
       <DarkThemeToggle />

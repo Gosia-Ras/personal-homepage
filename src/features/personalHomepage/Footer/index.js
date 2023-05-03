@@ -19,9 +19,7 @@ export const Footer = () => {
       <Address>
         <ContactEmail href={`mailto:${email}`}>{email}</ContactEmail>
         <ContactParagraph>
-          I'm currently looking for a full-time position as a Front-End
-          Developer. Let&nbsp;me know of any opportunities you might have for
-          me! ✉️
+          I'm currently employed and <strong>not</strong> looking any Front-End position. You can still reach out to me through the social channels ✉️
         </ContactParagraph>
         <IconsBox>
           <a

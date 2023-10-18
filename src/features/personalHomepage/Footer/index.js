@@ -39,7 +39,7 @@ export const Footer = () => {
             <FacebookIcon />
           </a>
           <a
-            href="https://www.linkedin.com/in/malgorzata-ras/"
+            href="https://www.linkedin.com/in/gosia-hildebrand/"
             rel="noreferrer noopener"
             target="_blank"
             title="LinkedIn Profile"

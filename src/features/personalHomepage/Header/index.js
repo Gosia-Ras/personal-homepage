@@ -11,10 +11,18 @@ import {
   HeroIntro,
 } from "./styled";
 import { DarkThemeToggle } from "../DarkThemeToggler";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Header = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <HeroContainer>
+    <HeroContainer data-aos="fade-up" data-aos-duration="3000"  data-aos-offset="500">
       <Hero src={photo} alt="Gosia Hildebrand" />
       <DescriptionBox>
         <HeroIntro>This is</HeroIntro>

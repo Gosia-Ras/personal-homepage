@@ -11,15 +11,23 @@ import {
   LinkedinIcon,
   Address,
 } from "./styled";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Footer = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <ContactSection id="contact">
+    <ContactSection id="contact" data-aos="fade-up" data-aos-duration="3000">
       <ContactHeader>Let's talk!</ContactHeader>
       <Address>
         <ContactEmail href={`mailto:${email}`}>{email}</ContactEmail>
         <ContactParagraph>
-          I'm currently employed and <strong>not</strong> looking any Front-End position. You can still reach out to me through the social channels ✉️
+          I'm currently employed and <strong>not</strong> looking any Front-End
+          position. You can still reach out to me through the social channels ✉️
         </ContactParagraph>
         <IconsBox>
           <a

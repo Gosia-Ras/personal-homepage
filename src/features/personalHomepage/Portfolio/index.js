@@ -15,26 +15,33 @@ import {
 } from "./styled";
 import { Loader } from "./Content/Loader";
 import { Error } from "./Content/Error";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export const Portfolio = () => {
   const { repos, loading, error } = useFetchData();
 
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <PortfolioContainer>
-      <PortfolioHeaderBox>
+      <PortfolioHeaderBox data-aos="fade-up" data-aos-duration="2000">
         <PortfolioIcon />
         <PortfolioHeader>Portfolio</PortfolioHeader>
         <PortfolioParagraph>My recent projects</PortfolioParagraph>
       </PortfolioHeaderBox>
       <>
-        <ProjectsBox>
+        <ProjectsBox data-aos="fade-up" data-aos-duration="2000">
           {error ? (
             <Error />
           ) : loading ? (
             <Loader />
           ) : (
             repos.map(({ id, name, description, homepage, html_url }) => (
-              <ProjectCard key={id}>
+              <ProjectCard key={id} data-aos="fade-up" data-aos-duration="2000">
                 <ProjectName>{name}</ProjectName>
                 <ProjectDescription>{description}</ProjectDescription>
                 <Links>

@@ -7,19 +7,18 @@ export const HeroContainer = styled.header`
   margin: 0 auto;
   margin-top: 100px;
   margin-bottom: 30px;
-  max-width: 80vw;
+  max-width: 90vw;
+  padding: 0 25px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     flex-direction: column;
     margin-top: 0px;
-    max-width: 80vw;
   }
 `;
 
 export const Hero = styled.img`
-  height: 350px;
-  width: 100%;
-  aspect-ratio: 1/1;
+  height: 400px;
+  width: auto;
   border-radius: 50%;
   margin-right: 20px;
 

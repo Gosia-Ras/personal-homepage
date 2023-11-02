@@ -9,19 +9,18 @@ import {
 export const SkillsBox = styled.section`
   background-color: ${backgroundSecondary};
   border-radius: 4px;
-  max-width: 1000px;
-  margin: 0 auto;
   padding: 15px;
-  margin-top: 63px;
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
   max-height: 400px;
   transition: background 0.5s;
+  width: 100%;
+  margin: 30px 0;
+  max-width: 80vw;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
-    margin-top: 40px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.xl}) {
+    margin: 30px auto;
     max-height: fit-content;
-    max-width: 85vw;
   }
 `;
 

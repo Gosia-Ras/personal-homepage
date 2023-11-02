@@ -10,7 +10,8 @@ import α from "color-alpha";
 
 export const PortfolioContainer = styled.section`
   margin: 0 auto;
-  max-width: 1000px;
+  width: 100%;
+  padding: 15px;
 `;
 
 export const PortfolioHeaderBox = styled.header`
@@ -49,32 +50,32 @@ export const PortfolioParagraph = styled.p`
   }
 `;
 
-export const ProjectsBox = styled.ul`
+export const ProjectsBox = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 28px;
-  padding: 0;
-  list-style: none;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
-    grid-template-columns: 1fr;
-    grid-gap: 18px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.xl}) {
+    grid-template-columns: auto;
+    margin: 0 30px;
+    grid-gap: 15px;
   }
 `;
 
-export const ProjectCard = styled.li`
+export const ProjectCard = styled.div`
+  box-sizing: border-box;
   border: 6px solid ${projectBoxBorder};
-  padding: 10px 40px 10px 40px;
+  padding: 10px 40px;
   background-color: ${backgroundSecondary};
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
-  margin: 0 auto;
   transition: border 275ms ease;
 
   &:hover {
     border: 6px solid rgba(3, 102, 214, 0.2);
-  } //find other solution for color
+  }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     padding: 25px;

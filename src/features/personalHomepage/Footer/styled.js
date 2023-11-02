@@ -6,9 +6,10 @@ import { InstagramWithCircle } from "@styled-icons/entypo-social/InstagramWithCi
 import { iconSocialColors, textColor } from "../../../core/App/theme";
 
 export const ContactSection = styled.footer`
-  padding: 110px 400px 110px 0px;
+  width: max-content;
   align-self: flex-start;
   margin: 0 auto;
+  padding: 50px 0;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
     margin-top: 50px;
@@ -19,6 +20,7 @@ export const ContactSection = styled.footer`
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     padding: 10px;
     margin-top: 20px;
+    width: 100%;
   }
 `;
 

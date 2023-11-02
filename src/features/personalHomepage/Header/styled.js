@@ -6,7 +6,8 @@ export const HeroContainer = styled.header`
   justify-content: center;
   margin: 0 auto;
   margin-top: 100px;
-  max-width: 85vw;
+  margin-bottom: 30px;
+  max-width: 80vw;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     flex-direction: column;
@@ -16,15 +17,20 @@ export const HeroContainer = styled.header`
 `;
 
 export const Hero = styled.img`
-  max-width: 300px;
-  max-height: 300px;
-  width: 30vw;
+  height: 350px;
+  width: 100%;
+  aspect-ratio: 3/3;
   border-radius: 50%;
   margin-right: 20px;
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
-    width: 132.67px;
-    height: 132.67px;
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+    max-height: 150px;
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
+    height: 100%;
+    max-height: none;
+    width: 50%;
   }
 `;
 

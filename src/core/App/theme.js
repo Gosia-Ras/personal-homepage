@@ -49,5 +49,6 @@ export const defaultTheme = {
     small: "480px",
     medium: "767px",
     large: "992px",
+    xl: "1199px",
   },
 };

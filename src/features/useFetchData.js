@@ -3,7 +3,7 @@ import axios from "axios";
 
 const APIBaseURL = "https://api.github.com/users/";
 
-const APIDetailsURL = "Gosia-Ras/repos?type=all&sort=updated&per_page=6";
+const APIDetailsURL = "Gosia-Ras/repos?type=all&sort=updated&per_page=10";
 
 const useFetchData = () => {
   const [repos, setRepos] = useState([]);
@@ -25,8 +25,7 @@ const useFetchData = () => {
 
     const timer = setTimeout(() => {
       fetchData();
-    }, 3000); //skrócić
-
+    }, 3000);
     return () => clearTimeout(timer);
   }, []);
 

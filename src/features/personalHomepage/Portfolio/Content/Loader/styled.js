@@ -10,7 +10,7 @@ const rotate = keyframes`
 export const Loading = styled(loading)`
   animation: ${rotate} 1s linear infinite;
   position: relative; //due to grid layout of ProjectBox
-  left: 85%;
+  left: 42%;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     max-width: 20vw;

@@ -11,7 +11,7 @@ import α from "color-alpha";
 export const PortfolioContainer = styled.section`
   margin: 0 auto;
   width: 100%;
-  padding: 15px;
+  padding: 0 50px;
 `;
 
 export const PortfolioHeaderBox = styled.header`
@@ -51,6 +51,10 @@ export const PortfolioParagraph = styled.p`
 `;
 
 export const ProjectsBox = styled.div`
+  padding: 15px;
+`;
+
+export const ProjectGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-column-gap: 15px;

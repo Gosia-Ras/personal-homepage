@@ -1,5 +1,9 @@
-import { Loading } from "./styled";
+import { Loading, LoaderContainer } from "./styled";
 
 export const Loader = () => {
-  return <Loading />;
+  return (
+    <LoaderContainer>
+      <Loading />
+    </LoaderContainer>
+  );
 };

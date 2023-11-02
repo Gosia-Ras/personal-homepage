@@ -7,6 +7,7 @@ import {
   PortfolioHeaderBox,
   PortfolioIcon,
   PortfolioParagraph,
+  ProjectGrid,
   ProjectCard,
   ProjectDescription,
   ProjectLink,
@@ -40,38 +41,44 @@ export const Portfolio = () => {
           ) : loading ? (
             <Loader />
           ) : (
-            repos.map(({ id, name, description, homepage, html_url }) => (
-              <ProjectCard key={id} data-aos="fade-up" data-aos-duration="2000">
-                <ProjectName>{name}</ProjectName>
-                <ProjectDescription>{description}</ProjectDescription>
-                <Links>
-                  <ListItem>
-                    <dt>Demo:</dt>
-                    <dd>
-                      <ProjectLink
-                        target="_blank"
-                        rel="noreferrer"
-                        href={homepage}
-                      >
-                        See the preview
-                      </ProjectLink>
-                    </dd>
-                  </ListItem>
-                  <ListItem>
-                    <dt>Code:</dt>
-                    <dd>
-                      <ProjectLink
-                        target="_blank"
-                        rel="noreferrer"
-                        href={html_url}
-                      >
-                        Repository
-                      </ProjectLink>
-                    </dd>
-                  </ListItem>
-                </Links>
-              </ProjectCard>
-            ))
+            <ProjectGrid>
+              {repos.map(({ id, name, description, homepage, html_url }) => (
+                <ProjectCard
+                  key={id}
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
+                  <ProjectName>{name}</ProjectName>
+                  <ProjectDescription>{description}</ProjectDescription>
+                  <Links>
+                    <ListItem>
+                      <dt>Demo:</dt>
+                      <dd>
+                        <ProjectLink
+                          target="_blank"
+                          rel="noreferrer"
+                          href={homepage}
+                        >
+                          See the preview
+                        </ProjectLink>
+                      </dd>
+                    </ListItem>
+                    <ListItem>
+                      <dt>Code:</dt>
+                      <dd>
+                        <ProjectLink
+                          target="_blank"
+                          rel="noreferrer"
+                          href={html_url}
+                        >
+                          Repository
+                        </ProjectLink>
+                      </dd>
+                    </ListItem>
+                  </Links>
+                </ProjectCard>
+              ))}{" "}
+            </ProjectGrid>
           )}
         </ProjectsBox>
       </>

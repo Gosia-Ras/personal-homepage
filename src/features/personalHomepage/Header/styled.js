@@ -19,7 +19,7 @@ export const HeroContainer = styled.header`
 export const Hero = styled.img`
   height: 350px;
   width: 100%;
-  aspect-ratio: 3/3;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   margin-right: 20px;
 

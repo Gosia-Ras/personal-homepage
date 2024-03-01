@@ -22,7 +22,7 @@ export const DarkThemeToggle = () => {
         height={20}
         width={45}
         id="checkbox"
-        type="checkbox"
+        type="radio"
         checked={darkThemeEnabled}
         onChange={() => dispatch({ type: TOGGLE_DARKTHEME })}
       />

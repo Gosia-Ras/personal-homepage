@@ -7,11 +7,7 @@ export const Skills = ({ title, skills }) => {
     AOS.init();
   }, []);
   return (
-    <SkillsBox
-      data-aos="fade-up"
-      data-aos-duration="2000"
-      data-aos-offset="500"
-    >
+    <SkillsBox data-aos="fade-up" data-aos-offset="500">
       <SkillsHeader>{title}</SkillsHeader>
       <SkillsList>
         {skills.map((skill) => (

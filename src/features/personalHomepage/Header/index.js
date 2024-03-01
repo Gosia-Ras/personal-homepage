@@ -11,21 +11,11 @@ import {
   HeroIntro,
 } from "./styled";
 import { DarkThemeToggle } from "../DarkThemeToggler";
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 
 export const Header = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
-    <HeroContainer
-      data-aos="fade-up"
-      data-aos-duration="3000"
-      data-aos-offset="500"
-    >
+    <HeroContainer data-aos="fade">
       <Hero src={photo} alt="Gosia Hildebrand" />
       <DescriptionBox>
         <HeroIntro>This is</HeroIntro>
@@ -43,7 +33,13 @@ export const Header = () => {
         </MainParagraph>
         <ContactButton>
           <img src={message} alt="email icon" />
-          <ButtonText href="#contact">Contact Me</ButtonText>
+          <ButtonText
+            href="https://www.linkedin.com/in/gosia-hildebrand/"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            Contact Me
+          </ButtonText>
         </ContactButton>
       </DescriptionBox>
       <DarkThemeToggle />

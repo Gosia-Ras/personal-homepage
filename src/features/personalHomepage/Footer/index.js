@@ -1,3 +1,4 @@
+import React from "react";
 import { email } from "../email";
 import {
   ContactEmail,
@@ -14,13 +15,7 @@ import {
 
 export const Footer = () => {
   return (
-    <ContactSection
-      id="contact"
-      data-aos="fade-right"
-      data-aos-duration="2000"
-      data-aos-offset="6
-    00"
-    >
+    <ContactSection id="contact">
       <ContactHeader>Let's talk!</ContactHeader>
       <Address>
         <ContactEmail href={`mailto:${email}`}>{email}</ContactEmail>

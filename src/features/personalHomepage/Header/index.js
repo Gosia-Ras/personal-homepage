@@ -16,25 +16,30 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 export const Header = () => {
-
   useEffect(() => {
     AOS.init();
   }, []);
 
   return (
-    <HeroContainer data-aos="fade-up" data-aos-duration="3000"  data-aos-offset="500">
+    <HeroContainer
+      data-aos="fade-up"
+      data-aos-duration="3000"
+      data-aos-offset="500"
+    >
       <Hero src={photo} alt="Gosia Hildebrand" />
       <DescriptionBox>
         <HeroIntro>This is</HeroIntro>
         <HeroHeader>Gosia Hildebrand</HeroHeader>
         <MainParagraph>
-          👩‍💻 I'm a Front-End Developer with a web agency, specializing in the
-          development of <strong>custom WordPress themes</strong> tailored to
-          businesses' unique needs. I'm open to exciting collaborations and
-          networking within the vibrant tech community. Feel free to explore my
-          portfolio to discover more about my work and interests. <br />
-          In my free time, I dive into personal projects, honing my skills in
-          React, JavaScript, and the latest frameworks.
+          As a Front-End Developer specializing in WordPress at a web agency, I
+          bring over 2 years of experience in crafting responsive, user-friendly
+          websites. My expertise extends beyond WordPress to include JavaScript,
+          React, and CSS libraries like Bootstrap and Tailwind CSS. I'm
+          passionate about continuous learning and applying web technologies to
+          develop custom themes tailored to business needs. <br />
+          Explore my portfolio to learn more about my work and interests, and
+          see my projects on GitHub that demonstrate my commitment to
+          innovation, quality, and efficiency.
         </MainParagraph>
         <ContactButton>
           <img src={message} alt="email icon" />

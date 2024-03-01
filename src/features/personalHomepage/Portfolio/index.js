@@ -28,14 +28,21 @@ export const Portfolio = () => {
   }, []);
 
   return (
-    <PortfolioContainer>
-      <PortfolioHeaderBox data-aos="fade-up" data-aos-duration="2000">
+    <PortfolioContainer data-aos="fade-up" data-aos-duration="2000">
+      <PortfolioHeaderBox data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-offset="6
+          00">
         <PortfolioIcon />
         <PortfolioHeader>Portfolio</PortfolioHeader>
         <PortfolioParagraph>My recent projects</PortfolioParagraph>
       </PortfolioHeaderBox>
       <>
-        <ProjectsBox data-aos="fade-up" data-aos-duration="2000">
+        <ProjectsBox
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-offset="300"
+        >
           {error ? (
             <Error />
           ) : loading ? (

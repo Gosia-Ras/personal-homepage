@@ -14,7 +14,13 @@ import {
 
 export const Footer = () => {
   return (
-    <ContactSection id="contact">
+    <ContactSection
+      id="contact"
+      data-aos="fade-right"
+      data-aos-duration="2000"
+      data-aos-offset="6
+    00"
+    >
       <ContactHeader>Let's talk!</ContactHeader>
       <Address>
         <ContactEmail href={`mailto:${email}`}>{email}</ContactEmail>

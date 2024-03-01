@@ -4,15 +4,10 @@ import { textSecondaryColor } from "../../../core/App/theme";
 export const HeroContainer = styled.header`
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 30px;
-  max-width: 90vw;
-  padding: 0 25px;
+  padding: 50px;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {
     flex-direction: column;
-    margin-top: 0px;
   }
 `;
 

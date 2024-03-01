@@ -2,16 +2,18 @@ import styled from "styled-components";
 import { Github } from "@styled-icons/bootstrap/Github";
 import {
   backgroundSecondary,
-  projectBoxBorder,
   projectTitle,
   textSecondaryColor,
 } from "../../../core/App/theme";
 import α from "color-alpha";
 
 export const PortfolioContainer = styled.section`
-  margin: 0 auto;
-  width: 100%;
-  padding: 0 50px;
+  width: fit-content;
+  max-width: 60vw;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.xl}) {
+    max-width: 85vw;
+  }
 `;
 
 export const PortfolioHeaderBox = styled.header`
@@ -69,16 +71,16 @@ export const ProjectGrid = styled.div`
 
 export const ProjectCard = styled.div`
   box-sizing: border-box;
-  border: 6px solid ${projectBoxBorder};
   padding: 10px 40px;
   background-color: ${backgroundSecondary};
   box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.02),
     0px 16px 58px rgba(9, 10, 51, 0.03);
   border-radius: 4px;
-  transition: border 275ms ease;
+  transition: box-shadow 400ms ease;
 
   &:hover {
-    border: 6px solid rgba(3, 102, 214, 0.2);
+    box-shadow: 0px -2px 50px rgba(9, 10, 51, 0.05),
+      0px 16px 58px rgba(9, 10, 51, 0.06);
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoints.medium}) {

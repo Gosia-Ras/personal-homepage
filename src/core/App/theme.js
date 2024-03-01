@@ -20,11 +20,6 @@ export const iconSocialColors = theme("theme", {
   dark: "#DADADA",
 });
 
-export const projectBoxBorder = theme("theme", {
-  light: "#E4E8EC",
-  dark: "#25282D",
-});
-
 export const projectTitle = theme("theme", {
   light: "#0366D6",
   dark: "#FFFFFF",

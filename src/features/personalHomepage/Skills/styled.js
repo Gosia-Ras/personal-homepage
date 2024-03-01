@@ -14,13 +14,13 @@ export const SkillsBox = styled.section`
     0px 16px 58px rgba(9, 10, 51, 0.03);
   max-height: 400px;
   transition: background 0.5s;
-  width: 100%;
   margin: 30px 0;
-  max-width: 80vw;
+  width: 60vw;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.xl}) {
     margin: 30px auto;
     max-height: fit-content;
+    width: 80vw;
   }
 `;
 

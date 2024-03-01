@@ -11,23 +11,25 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-   font-family: 'Inter', sans-serif;
-height: 100vh;
-   overflow-x: hidden;
-   margin: 0;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
   background: ${backgroundColor};
-   padding: 0;
-   transition: background 0.3s;
-   letter-spacing: 0.05em;
-    @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
-   margin: 0 auto;
+  padding: 0;
+  transition: background 0.3s;
+  letter-spacing: 0.05em;
+  
+  @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+  margin: 0 auto;
   }
   }
 
   main {
+    margin: 0 auto;
     display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
   }
 `;
